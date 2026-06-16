@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SITG Cyber & Quantum Security Lexicon</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:1200px;margin:auto;padding:20px;line-height:1.5}
+h1{text-align:center}
+#search{width:100%;padding:12px;font-size:16px;margin:15px 0}
+.az{position:sticky;top:0;background:#fff;padding:10px 0}
+.az a{margin-right:8px;text-decoration:none;font-weight:bold}
+.term{padding:6px 0;border-bottom:1px solid #eee}
+.term b{color:#0b3d6d}
+</style>
+</head>
+<body>
+<h1>SITG Cyber & Quantum Security Lexicon</h1>
+<input id="search" placeholder="Search terms...">
+<div class="az">
+<a href="#A">A</a><a href="#B">B</a><a href="#C">C</a><a href="#D">D</a>
+<a href="#E">E</a><a href="#F">F</a><a href="#G">G</a><a href="#H">H</a>
+<a href="#I">I</a><a href="#J">J</a><a href="#K">K</a><a href="#L">L</a>
+<a href="#M">M</a><a href="#N">N</a><a href="#O">O</a><a href="#P">P</a>
+<a href="#Q">Q</a><a href="#R">R</a><a href="#S">S</a><a href="#T">T</a>
+<a href="#U">U</a><a href="#V">V</a><a href="#W">W</a><a href="#X">X</a>
+<a href="#Y">Y</a><a href="#Z">Z</a>
+</div>
+
+<h2 id="A">A</h2>
+<div class="term"><b>AAA</b> — Authentication, Authorization, Accounting</div>
+<div class="term"><b>Access Control</b> — Rules defining who can access systems or data</div>
+<div class="term"><b>Access Governance</b> — Oversight ensuring access rights match roles</div>
+<div class="term"><b>Advanced Encryption Standard (AES)</b> — Core symmetric encryption</div>
+<div class="term"><b>Advanced Persistent Threat (APT)</b> — Long‑term, state‑level attacker</div>
+
+<h2 id="C">C</h2>
+<div class="term"><b>CBOM</b> — Cryptographic Bill of Materials</div>
+<div class="term"><b>Cryptographic Governance</b> — Oversight of cryptographic risk</div>
+<div class="term"><b>Cryptographic Debt</b> — Outdated or unmanaged cryptography</div>
+
+<h2 id="H">H</h2>
+<div class="term"><b>Harvest‑Now‑Decrypt‑Later (HNDL)</b> — Data captured today for future decryption</div>
+
+<h2 id="I">I</h2>
+<div class="term"><b>Independent Validation</b> — Third‑party confirmation of controls</div>
+
+<h2 id="M">M</h2>
+<div class="term"><b>ML‑KEM</b> — NIST standard post‑quantum key encapsulation mechanism</div>
+<div class="term"><b>ML‑DSA</b> — NIST standard post‑quantum digital signature algorithm</div>
+
+<h2 id="N">N</h2>
+<div class="term"><b>NIST PQC</b> — Quantum‑safe algorithms selected by NIST</div>
+
+<h2 id="P">P</h2>
+<div class="term"><b>PQC</b> — Post‑Quantum Cryptography</div>
+<div class="term"><b>PQC Migration</b> — Moving from classical to quantum‑safe cryptography</div>
+
+<h2 id="Q">Q</h2>
+<div class="term"><b>Q-CORE</b> — SITG quantum transformation framework</div>
+<div class="term"><b>QCSL</b> — Quantum Cryptographic Security Lifecycle</div>
+<div class="term"><b>Quantum Governance</b> — Oversight of quantum-related risk</div>
+<div class="term"><b>Quantum Migration Index</b> — Measurement of migration readiness</div>
+<div class="term"><b>Quantum Risk Assessment</b> — Evaluation of quantum-related exposure</div>
+
+<h2 id="Z">Z</h2>
+<div class="term"><b>Zero Trust</b> — Assume breach; verify everything</div>
+
+<script>
+document.getElementById('search').addEventListener('input', function(){
+ let f=this.value.toLowerCase();
+ document.querySelectorAll('.term').forEach(t=>{
+   t.style.display=t.innerText.toLowerCase().includes(f)?'block':'none';
+ });
+});
+</script>
+</body>
+</html>
